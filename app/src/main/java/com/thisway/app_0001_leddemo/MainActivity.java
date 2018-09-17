@@ -1,11 +1,12 @@
 package com.thisway.app_0001_leddemo;
 
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Toast;
 
@@ -28,8 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 checkBoxLed2.setChecked(true);
                 checkBoxLed3.setChecked(true);
                 checkBoxLed4.setChecked(true);
-            }
-            else {
+            } else {
                 button.setText("ALL ON");
                 checkBoxLed1.setChecked(false);
                 checkBoxLed2.setChecked(false);
@@ -44,13 +44,14 @@ public class MainActivity extends AppCompatActivity {
         boolean checked = ((CheckBox) view).isChecked();
 
         // Check which checkbox was clicked
-        switch(view.getId()) {
+        switch (view.getId()) {
             case R.id.LED1:
                 if (checked) {
                     // Put some meat on the sandwich
                     Toast.makeText(getApplicationContext(), "LED1 on", Toast.LENGTH_SHORT).show();
-                }
-                else {
+
+
+                } else {
                     // Remove the meat
                     Toast.makeText(getApplicationContext(), "LED1 off", Toast.LENGTH_SHORT).show();
                 }
@@ -59,8 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 if (checked) {
                     // Put some meat on the sandwich
                     Toast.makeText(getApplicationContext(), "LED2 on", Toast.LENGTH_SHORT).show();
-                }
-                else {
+                } else {
                     // Remove the meat
                     Toast.makeText(getApplicationContext(), "LED2 off", Toast.LENGTH_SHORT).show();
                 }
@@ -70,8 +70,7 @@ public class MainActivity extends AppCompatActivity {
                 if (checked) {
                     // Put some meat on the sandwich
                     Toast.makeText(getApplicationContext(), "LED3 on", Toast.LENGTH_SHORT).show();
-                }
-                else {
+                } else {
                     // Remove the meat
                     Toast.makeText(getApplicationContext(), "LED3 off", Toast.LENGTH_SHORT).show();
                 }
@@ -81,8 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 if (checked) {
                     // Put some meat on the sandwich
                     Toast.makeText(getApplicationContext(), "LED4 on", Toast.LENGTH_SHORT).show();
-                }
-                else {
+                } else {
                     // Remove the meat
                     Toast.makeText(getApplicationContext(), "LED4 off", Toast.LENGTH_SHORT).show();
                 }
@@ -90,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
             // TODO: Veggie sandwich
         }
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
