@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
             ledon = !ledon;
             if (ledon) {
                 button.setText("ALL OFF");
+
                 checkBoxLed1.setChecked(true);
                 checkBoxLed2.setChecked(true);
                 checkBoxLed3.setChecked(true);
@@ -88,6 +89,8 @@ public class MainActivity extends AppCompatActivity {
             // TODO: Veggie sandwich
         }
     }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
